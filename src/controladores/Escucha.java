@@ -28,6 +28,7 @@ public class Escucha implements ActionListener {
 
     JPanel panel;
     JFrame frame;
+    PanelMenu cuerpo;
 
     public Escucha() {
     }
@@ -66,6 +67,7 @@ public class Escucha implements ActionListener {
                 framePrincipal.setContentPane(panel);
                 break;
             case "Creditos":
+                JOptionPane.showMessageDialog(cuerpo, "Desarrollador y Diseñador Grafico:\nLeandro Vitale\n\nAgradecimientos: Alejandro Parodi", "Creditos", JOptionPane.YES_NO_OPTION);
                 break;
             case "Volver Menu":
                 framePrincipal.getContentPane().setVisible(false);

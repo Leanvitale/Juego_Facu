@@ -26,7 +26,8 @@ public class Frutas implements ActionListener{
     private Graphics2D g2d;
     private int on;
     private Timer tm;
-
+    private String image="sandia.png";
+    
     public Frutas(PanelJuego game) {
         this.game = game;
     }
@@ -50,10 +51,11 @@ public class Frutas implements ActionListener{
     }
 
     public void paint(Graphics2D g) {
-        tm = new Timer(700, this);
+        
+        tm = new Timer(500, this);
         tm.start();
         Toolkit t = Toolkit.getDefaultToolkit();
-        Image fruta = t.getImage("sandia.png");
+        Image fruta = t.getImage(image);
         g.drawImage(fruta, x-15, y-27, game);
         game.repaint();
     }
@@ -80,12 +82,14 @@ public class Frutas implements ActionListener{
             System.out.println("OrigenX "+originX+", OrigenY "+originY);
             //x2=originX;
             //y2=originY;
+            
             if(x<258){
                     x+=1;
             }
             if(y>352){
                     y-=1;
             }
+            
             if(x>258){
                     x-=1;
             }
@@ -94,14 +98,22 @@ public class Frutas implements ActionListener{
             }
             
             if(y==352 && x==258){
+                image="";
                 this.on=0;
                 tm.stop();
+                
             }
-            
             
             game.repaint();
             
         }
     }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    
+    
 
 }

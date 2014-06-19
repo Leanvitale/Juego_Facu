@@ -68,16 +68,9 @@ public final class PanelJuego extends JPanel {
         g2d.drawImage(imagen, 0, 0, this);
        
         //honda.paint(g2d);
-        int contadorX=0;
-        int contadorY=0;
-        
-            contadorX+=10;
-            contadorY+=10;
+       
             manejar.setg2d(g2d,honda, fruta);
-            honda.pain1(g2d);
-            fruta.paint(g2d);
             honda.paint(g2d);
-            manejar.setg2d(g2d,honda, fruta);
             fruta.paint(g2d);
             hipo.paint(g2d);
             

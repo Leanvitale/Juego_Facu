@@ -103,7 +103,6 @@ public class Honda implements ActionListener{
             //y2=originY;
             if(x2<258){
                     x2+=1;
-                    
             }
             if(y2>352){
                     y2-=1;
