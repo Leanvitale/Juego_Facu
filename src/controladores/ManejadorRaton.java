@@ -42,6 +42,7 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
     @Override
     public void mouseReleased(MouseEvent e) {
        honda.setAnimationON(1);
+       fruta.setAnimationON(1);
     }
    
     
@@ -60,7 +61,8 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
         fruta.setMouseXY(x, y);
         honda.setMouseXY(x, y);
         System.out.println(""+x+";"+y);
-        honda.paint(g2d);
+        //honda.paint(g2d);
+        //fruta.paint(g2d);
     }
 
     @Override
