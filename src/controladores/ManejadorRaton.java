@@ -60,7 +60,7 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
         y = e.getY();
         fruta.setMouseXY(x, y);
         honda.setMouseXY(x, y);
-        System.out.println(""+x+";"+y);
+        //System.out.println(""+x+";"+y);
         fruta.setImage("sandia.png");
         fruta.paint(g2d);
         //honda.paint(g2d);

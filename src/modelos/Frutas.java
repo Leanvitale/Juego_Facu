@@ -32,27 +32,9 @@ public class Frutas implements ActionListener{
         this.game = game;
     }
 
-    public void move() {
-        if (x + xa < 0) {
-            xa = 1;
-        }
-        if (x + xa > game.getWidth() - 30) {
-            xa = -1;
-        }
-        if (y + ya < 0) {
-            ya = 1;
-        }
-        if (y + ya > game.getHeight() - 30) {
-            ya = -1;
-        }
-
-        x = x + xa;
-        y = y + ya;
-    }
-
     public void paint(Graphics2D g) {
         
-        tm = new Timer(610, this);
+        tm = new Timer(640, this);
         tm.start();
         Toolkit t = Toolkit.getDefaultToolkit();
         Image fruta = t.getImage(image);
@@ -75,11 +57,11 @@ public class Frutas implements ActionListener{
         if(this.on==1){
             int deltaX = 258-x;
             int deltaY = 352-y;
-            System.out.println("DetaX: "+deltaX);
-            System.out.println("DeltaY: "+deltaY);
+            //System.out.println("DetaX: "+deltaX);
+            //System.out.println("DeltaY: "+deltaY);
             int originX = x+deltaX;
             int originY = y+deltaY;
-            System.out.println("OrigenX "+originX+", OrigenY "+originY);
+            //System.out.println("OrigenX "+originX+", OrigenY "+originY);
             //x2=originX;
             //y2=originY;
             

@@ -86,11 +86,11 @@ public class Honda implements ActionListener{
         if(this.on==1){
             int deltaX = 258-x2;
             int deltaY = 352-y2;
-            System.out.println("DeltaX: "+deltaX);
-            System.out.println("DeltaY: "+deltaY);
+            //System.out.println("DeltaX: "+deltaX);
+            //System.out.println("DeltaY: "+deltaY);
             int originX = x2+deltaX;
             int originY = y2+deltaY;
-            System.out.println("OrigenX "+originX+", OrigenY "+originY);
+            //System.out.println("OrigenX "+originX+", OrigenY "+originY);
             //x2=originX;
             //y2=originY;
             if(x2<258){

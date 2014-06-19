@@ -50,10 +50,6 @@ public final class PanelJuego extends JPanel {
  
     }
 
-    public void move() {
-        fruta.move();
-    }
-
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
