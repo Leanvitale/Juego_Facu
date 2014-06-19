@@ -26,6 +26,7 @@ public class Honda implements ActionListener{
     private Graphics2D g2d;
     private Timer tm;
     private int on;
+    private Frutas fruta;
     
     public Honda(PanelJuego game) {
         this.game = game;
@@ -33,7 +34,7 @@ public class Honda implements ActionListener{
 
     public void paint(Graphics2D g) {
         //nuevas posiciones onRelease del mouse
-        tm = new Timer(500, this);
+        tm = new Timer(400, this);
         tm.start();
         
         //System.out.println(""+x2+","+y2);
@@ -119,8 +120,7 @@ public class Honda implements ActionListener{
                 this.on=0;
                 tm.stop();
             }
-            
-            
+
             game.repaint();
             
         }

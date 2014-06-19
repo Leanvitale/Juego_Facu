@@ -50,10 +50,6 @@ public final class PanelJuego extends JPanel {
  
     }
 
-    public void move() {
-        fruta.move();
-    }
-
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -77,9 +73,6 @@ public final class PanelJuego extends JPanel {
             honda.pain1(g2d);
             fruta.paint(g2d);
             honda.paint(g2d);
-            manejar.setg2d(g2d,honda, fruta);
-            fruta.paint(g2d);
-            hipo.paint(g2d);
             
         
     }

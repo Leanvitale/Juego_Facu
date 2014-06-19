@@ -31,26 +31,8 @@ public class Frutas implements ActionListener{
         this.game = game;
     }
 
-    public void move() {
-        if (x + xa < 0) {
-            xa = 1;
-        }
-        if (x + xa > game.getWidth() - 30) {
-            xa = -1;
-        }
-        if (y + ya < 0) {
-            ya = 1;
-        }
-        if (y + ya > game.getHeight() - 30) {
-            ya = -1;
-        }
-
-        x = x + xa;
-        y = y + ya;
-    }
-
     public void paint(Graphics2D g) {
-        tm = new Timer(700, this);
+        tm = new Timer(400, this);
         tm.start();
         Toolkit t = Toolkit.getDefaultToolkit();
         Image fruta = t.getImage("sandia.png");
