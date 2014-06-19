@@ -7,9 +7,9 @@ package controladores;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import vistas.Menu;
@@ -25,6 +25,7 @@ import vistas.PanelRanking;
 public class Escucha implements ActionListener {
 
     JPanel panel;
+    JFrame frame;
 
     public Escucha() {
     }
@@ -61,6 +62,8 @@ public class Escucha implements ActionListener {
                 panel = new PanelRanking();
                 panel.setLayout(null);
                 framePrincipal.setContentPane(panel);
+                break;
+            case "Creditos":
                 break;
             case "Volver Menu":
                 framePrincipal.getContentPane().setVisible(false);
