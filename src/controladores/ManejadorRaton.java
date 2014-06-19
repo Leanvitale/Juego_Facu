@@ -35,7 +35,10 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
+        x = 258; 
+        y = 352;
+        honda.setMouseXY(x, y);
+        honda.paint(g2d);
     }
 
     @Override
