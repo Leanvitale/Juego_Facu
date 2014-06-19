@@ -6,6 +6,8 @@
 package controladores;
 
 import java.awt.Graphics2D;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -29,7 +31,7 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
+         
     }
 
     @Override
@@ -59,6 +61,8 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
         fruta.setMouseXY(x, y);
         honda.setMouseXY(x, y);
         System.out.println(""+x+";"+y);
+        fruta.setImage("sandia.png");
+        fruta.paint(g2d);
         //honda.paint(g2d);
         //fruta.paint(g2d);
     }
@@ -92,5 +96,10 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
 
     }
 
+    
+        
+
+    
+    
     
 }

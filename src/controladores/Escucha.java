@@ -27,6 +27,7 @@ import vistas.PanelRanking;
 public class Escucha implements ActionListener {
 
     JPanel panel;
+    JFrame frame;
     PanelMenu cuerpo;
 
     public Escucha() {

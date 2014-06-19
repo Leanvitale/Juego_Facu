@@ -26,7 +26,6 @@ public class Honda implements ActionListener{
     private Graphics2D g2d;
     private Timer tm;
     private int on;
-    private Frutas fruta;
     
     public Honda(PanelJuego game) {
         this.game = game;
@@ -34,7 +33,7 @@ public class Honda implements ActionListener{
 
     public void paint(Graphics2D g) {
         //nuevas posiciones onRelease del mouse
-        tm = new Timer(400, this);
+        tm = new Timer(500, this);
         tm.start();
         
         //System.out.println(""+x2+","+y2);
@@ -43,14 +42,6 @@ public class Honda implements ActionListener{
 
         /*Defino el ancho de la linea que seria la Goma de la Honda*/
         g.setStroke(new BasicStroke(8));
-
-        /*Dibujo la Linea 1*/
-        g.setColor(Color.decode("#2a1409"));
-        g.drawLine(270, 353, x2, y2);
-
-        /*Hona 1*/
-        Image honda1 = t.getImage("honda1.png");
-        g.drawImage(honda1, 255, 333, game);
 
         /*Dibujo la Linea 2*/
         g.setColor(Color.decode("#3f1e0e"));
@@ -104,7 +95,6 @@ public class Honda implements ActionListener{
             //y2=originY;
             if(x2<258){
                     x2+=1;
-                    
             }
             if(y2>352){
                     y2-=1;
@@ -120,7 +110,8 @@ public class Honda implements ActionListener{
                 this.on=0;
                 tm.stop();
             }
-
+            
+            
             game.repaint();
             
         }
