@@ -34,10 +34,11 @@ public final class PanelJuego extends JPanel {
     Hipopotamos hipo = new Hipopotamos(this);
     int x, y, xa = 1, ya = 1;
     /*Constructor de la clase PanelJuego*/
+    private ManejadorRaton manejar;
 
     public PanelJuego() throws InterruptedException {
 
-        ManejadorRaton manejar = new ManejadorRaton();
+        manejar = new ManejadorRaton();
         this.addMouseListener(manejar);
         this.addMouseMotionListener(manejar);
 
@@ -66,10 +67,18 @@ public final class PanelJuego extends JPanel {
         cosa.drawImage(fondo, 0, 0, this);
         g2d.drawImage(imagen, 0, 0, this);
        
-        honda.paint(g2d);
-        fruta.paint(g2d);
-        hipo.paint(g2d);
-
+        //honda.paint(g2d);
+        int contadorX=0;
+        int contadorY=0;
+        
+            contadorX+=10;
+            contadorY+=10;
+            honda.paint(g2d);
+            manejar.setg2d(g2d,honda);
+            fruta.paint(g2d);
+            hipo.paint(g2d);
+            
+        
     }
 
 }
