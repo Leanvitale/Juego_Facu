@@ -9,6 +9,7 @@ import java.awt.Graphics2D;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import modelos.Frutas;
 import modelos.Honda;
 import vistas.PanelJuego;
 
@@ -20,6 +21,7 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
 
     private int x, y;
     private Honda honda;
+    private Frutas fruta;
     private Graphics2D g2d;
     private PanelJuego gme;
 
@@ -37,8 +39,8 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
     public void mouseReleased(MouseEvent e) {
         x = 258; 
         y = 352;
+        fruta.setMouseXY(x, y);
         honda.setMouseXY(x, y);
-        honda.paint(g2d);
     }
 
     @Override
@@ -53,8 +55,8 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
     public void mouseDragged(MouseEvent e) {
         x = e.getX();
         y = e.getY();
+        fruta.setMouseXY(x, y);
         honda.setMouseXY(x, y);
-        honda.paint(g2d);
     }
 
     @Override
@@ -79,9 +81,10 @@ public class ManejadorRaton implements MouseListener, MouseMotionListener {
         return sy;
     }
 
-    public void setg2d(Graphics2D g2d, Honda honda) {
+    public void setg2d(Graphics2D g2d, Honda honda, Frutas fruta) {
         this.g2d = g2d;
         this.honda = honda;
+        this.fruta = fruta;
 
     }
 

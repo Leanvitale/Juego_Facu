@@ -27,20 +27,11 @@ public class Honda {
 
     public void paint(Graphics2D g) {
         //nuevas posiciones onRelease del mouse
-        System.out.println(""+x2+","+y2);
-        
+
         Toolkit t = Toolkit.getDefaultToolkit();
 
         /*Defino el ancho de la linea que seria la Goma de la Honda*/
         g.setStroke(new BasicStroke(8));
-
-        /*Dibujo la Linea 1*/
-        g.setColor(Color.decode("#2a1409"));
-        g.drawLine(270, 353, x2, y2);
-
-        /*Hona 1*/
-        Image honda1 = t.getImage("honda1.png");
-        g.drawImage(honda1, 255, 333, game);
 
         /*Dibujo la Linea 2*/
         g.setColor(Color.decode("#3f1e0e"));
@@ -56,6 +47,23 @@ public class Honda {
         
         game.repaint();
         
+    }
+    
+    public void pain1 (Graphics2D g){
+        Toolkit t = Toolkit.getDefaultToolkit();
+
+        /*Defino el ancho de la linea que seria la Goma de la Honda*/
+        g.setStroke(new BasicStroke(8));
+
+        /*Dibujo la Linea 1*/
+        g.setColor(Color.decode("#2a1409"));
+        g.drawLine(270, 353, x2, y2);
+
+        /*Hona 1*/
+        Image honda1 = t.getImage("honda1.png");
+        g.drawImage(honda1, 255, 333, game);
+        
+        game.repaint();
     }
     
     public void setMouseXY(int newX, int newY){
