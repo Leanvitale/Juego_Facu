@@ -3,17 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/controladores/Escucha.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/modelos/Honda.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/vistas/PanelJuego.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/vistas/Menu.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/vistas/PanelMenu.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/vistas/PanelOpciones.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/vistas/PanelRanking.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/modelos/Frutas.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/controladores/ManejadorRaton.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/modelos/Hipopotamos.java</file>
-            <file>file:/C:/Users/Lean/Documents/NetBeansProjects/Juego/src/juego/Juego.java</file>
+            <file>file:/root/NetBeansProjects/Juego_Facu-master/src/vistas/PanelMenu.java</file>
+            <file>file:/root/NetBeansProjects/Juego_Facu-master/src/controladores/Escucha.java</file>
+            <file>file:/root/NetBeansProjects/Juego_Facu-master/src/juego/Juego.java</file>
+            <file>file:/root/NetBeansProjects/Juego_Facu-master/src/vistas/PanelJuego.java</file>
+            <file>file:/root/NetBeansProjects/Juego_Facu-master/src/vistas/Menu.java</file>
+            <file>file:/root/NetBeansProjects/Juego_Facu-master/src/controladores/ManejadorRaton.java</file>
+            <file>file:/root/NetBeansProjects/Juego_Facu-master/src/modelos/Honda.java</file>
         </group>
     </open-files>
 </project-private>

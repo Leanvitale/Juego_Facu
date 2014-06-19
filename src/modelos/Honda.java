@@ -19,13 +19,16 @@ import vistas.PanelJuego;
 public class Honda {
 
     private PanelJuego game;
-    int  x2 = 258, y2 = 352;
-    
+    private int  x2 = 258, y2 = 352;
+    private Graphics2D g2d;
     public Honda(PanelJuego game) {
         this.game = game;
     }
 
     public void paint(Graphics2D g) {
+        //nuevas posiciones onRelease del mouse
+        System.out.println(""+x2+","+y2);
+        
         Toolkit t = Toolkit.getDefaultToolkit();
 
         /*Defino el ancho de la linea que seria la Goma de la Honda*/
@@ -50,5 +53,18 @@ public class Honda {
         /*Honda 2*/
         Image honda2 = t.getImage("honda2.png");
         g.drawImage(honda2, 237, 329, game);
+        
+        game.repaint();
+        
     }
+    
+    public void setMouseXY(int newX, int newY){
+        this.x2 = newX;
+        this.y2 = newY;
+    }
+
+    
+
+   
+
 }
